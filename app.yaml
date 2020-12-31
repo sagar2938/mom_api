@@ -1,0 +1,40 @@
+# application: mom-apicalls
+# version: live
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+libraries:
+- name: ssl
+  version: latest
+
+- name: MySQLdb
+  version: latest
+
+- name: pycrypto
+  version: latest
+
+
+handlers:
+
+- url: /api/blob_upload
+  script: blob_upload.app
+
+
+- url: /api/.*
+  script: api.app
+  secure: always
+
+- url: /templates
+  static_dir: templates
+
+
+- url: /delivery/.*
+  script: delivery.app
+
+- url: /customer/.*
+  script: customer.app
+
+
+- url: /dashboard/.*
+  script: dashboard.app

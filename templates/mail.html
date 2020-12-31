@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title></title> 
+	</head> 
+	<body style="margin: auto; padding: 0 auto"> 
+		<div>
+			<table cellpadding="0" cellspacing="0" border="0" style="width:100%"> 
+				<tbody>
+					<tr> 
+						<td valign="top"> 
+							<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%"> 
+								<tbody>
+									<tr> 
+										<td width="20" valign="top"></td> 
+										<td width="500" valign="top"> 
+											<a href="http://35.189.74.0:8082" alt="GoGeotrack" title="GoGeoTrack" style="text-decoration:none" target="_blank" ><img width="200px" height="auto" src="https://i.imgur.com/rWyl65s.png" alt="GoGeoTrack" title="GoGeoTrack" ></a> 
+										</td> 
+										<td width="20" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" height="15" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td height="1" bgcolor="#ddd" colspan="3"></td> 
+									</tr> 
+								</tbody>
+							</table> 
+							<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%"> 
+								<tbody>
+									<tr> 
+										<td width="20" height="40" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="50" valign="top"></td> 
+										<td width="440" valign="top"> 
+											<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:20px;font-weight:normal;font-size:16px;line-height:1.4"> 
+											Hey There, </p> 
+											<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:20px;font-weight:normal;font-size:16px;line-height:1.4"> 
+											We are glad to serve you.<br> 
+											G-Trans Logistics team is bound to provide you best service. Here are the details of your vehicles today. </p> 
+											<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:20px;font-size:14px;line-height:1.2"> 
+											</p>
+											<table class="m_6028132623877007913m_-6779381666710000799tablechart m_6028132623877007913m_-6779381666710000799text-center" align="center" style="text-align:center;font-size:14px;width:100%">
+												<tbody>
+													<tr style="background-color:#d9d9d9;color:#6f5c5c"> 
+														{% for header in headers %}
+														    <th style="border-right:1px solid #aab2bd;padding:5px">{{header}}</th>
+														{% endfor %}
+													</tr>
+													{% for datum in data %}
+														<tr style="border-bottom:1px solid #aab2bd;margin-top:2px;margin-bottom:2px"> 
+															{% for datumum in datum %}
+																<td style="padding:10px;border-right:1px solid #aab2bd;border-left:1px solid #aab2bd">{{datumum}}</td> 
+															{% endfor %}
+														</tr> 
+													{% endfor %}
+												</tbody> 
+											</table> 
+											<p></p> 
+											<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:20px;font-weight:normal;font-size:16px;line-height:1.4"> 
+											GoGeoTrack is still in private beta and we are absolutely thrilled to bring it to you with an amazing experience. Thanks for providing the opportunity to serve you. </p> 
+											<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:20px;font-weight:normal;font-size:16px;line-height:1.4"> 
+											Regards,<br> 
+											The G-Trans Logistics Team </p> 
+										</td> 
+										<td width="50" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" height="30" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" height="42" valign="top"> 
+										</td> 
+										<td width="20" height="42" valign="top"> 
+											<img src="https://i.imgur.com/GAz936f.png" alt="" title="" width="x" height="x"> 
+										</td> 
+									</tr> 
+								</tbody>
+							</table> 
+							<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%" bgcolor="#eee"> 
+								<tbody>
+									<tr> 
+										<td height="1" bgcolor="#eee" colspan="3"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" height="20" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" valign="top"></td> 
+										<td width="500" valign="top"> 
+										<div align="center" style="text-align:center"> 
+										<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:1px;font-weight:normal;font-size:12px;line-height:1.4;color:#777">Powered by G-Tech Solutions &copy; 2017 </p> 
+										<p style="margin:0;padding:0;font-family:&quot;Lucida Grande&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,Helvetica,Arial,sans-serif;margin-bottom:10px;font-weight:normal;font-size:12px;line-height:1.4;color:#777">G-Tech Solutions Pvt. Ltd. E-23/C, Sector-8, Noida(U.P)-201301</p> 
+										</div> 
+										</td> 
+										<td width="20" valign="top"></td> 
+									</tr> 
+									<tr> 
+										<td width="20" height="20" valign="top"></td> 
+									</tr> 
+								</tbody>
+							</table> 
+						</td> 
+					</tr> 
+				</tbody>
+			</table>
+			<div class="yj6qo"></div>
+			<div class="adL"></div>
+		</div> 
+	</body> 
+</html>

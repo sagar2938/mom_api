@@ -1,0 +1,10 @@
+cron:
+
+
+- description: 'update Assign delivery Boy'
+  url: /api/fcm/confirm/order/assign/cron/
+  schedule: every 5 minutes
+  timezone: Asia/Calcutta
+  # retry_parameters:
+  #   min_backoff_seconds: 2.5
+  #   max_doublings: 5
